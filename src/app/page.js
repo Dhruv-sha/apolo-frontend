@@ -22,7 +22,7 @@ export default function DoctorListing() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/list-doctor-with-filter', {
+        const { data } = await axios.get('https://azad-backend.onrender.com/list-doctor-with-filter', {
           params: filters,
         });
         setDoctors(data.doctors);
@@ -62,12 +62,12 @@ export default function DoctorListing() {
           name="keywords"
           content="Doctor listing, find doctors, book appointment, online doctor consultation, healthcare India"
         />
-        <link rel="canonical" href="http://localhost:3000/doctor-listing" />
+        <link rel="canonical" href="https://apolo-frontend-nu.vercel.app/doctor-listing" />
 
         {/* Open Graph */}
         <meta property="og:title" content="Find the Best Doctors Near You | Apollo247 Clone" />
         <meta property="og:description" content="Search and consult with doctors by specialty, location, availability, and more. Trusted and verified listings." />
-        <meta property="og:url" content="http://localhost:3000/doctor-listing" />
+        <meta property="og:url" content="https://apolo-frontend-nu.vercel.app/doctor-listing" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/doctor-banner.jpg" />
 
